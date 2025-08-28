@@ -8,6 +8,7 @@ import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 
@@ -31,7 +32,11 @@ public class base {
 		}
 
 		if (BrowserName.toLowerCase().equals("chrome")) {
-			driver = WebDriverManager.chromedriver().create();
+		    ChromeOptions options = new ChromeOptions();
+		    options.addArguments("--incognito");
+
+
+		    driver = WebDriverManager.chromedriver().capabilities(options).create();
 		}
 		if (BrowserName.toLowerCase().equals("edge")) {
 			driver = WebDriverManager.edgedriver().create();

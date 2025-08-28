@@ -5,7 +5,7 @@
     <classes>
       <class name="saucedemo.homePage">
         <methods>
-          <include name="test"/>
+          <include name="DemoTest"/>
           <include name="setup"/>
         </methods>
       </class> <!-- saucedemo.homePage -->
