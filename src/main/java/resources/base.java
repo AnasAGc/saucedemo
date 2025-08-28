@@ -2,10 +2,14 @@ package resources;
 
 import java.io.FileInputStream;
 import java.io.IOException;
+import java.time.Duration;
 import java.util.Properties;
+import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+
+import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class base {
 
@@ -27,12 +31,16 @@ public class base {
 		}
 
 		if (BrowserName.toLowerCase().equals("chrome")) {
-
-			System.setProperty("webdriver.chrome.driver", "\\src\\main\\java\\resources\\drivers\\chromedriver");
-			driver = new ChromeDriver();
-
+			driver = WebDriverManager.chromedriver().create();
 		}
-
+		if (BrowserName.toLowerCase().equals("edge")) {
+			driver = WebDriverManager.edgedriver().create();
+		}
+		if (BrowserName.toLowerCase().equals("firefox")) {
+			driver = WebDriverManager.firefoxdriver().create();
+		}
+		driver.manage().window().maximize();
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(15));
 		return driver;
 
 	}

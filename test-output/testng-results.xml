@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2025-08-28T22:11:06 EEST" name="Default suite" finished-at="2025-08-28T22:11:13 EEST" duration-ms="7313">
+    <groups>
+    </groups>
+    <test started-at="2025-08-28T22:11:06 EEST" name="Default test" finished-at="2025-08-28T22:11:13 EEST" duration-ms="7313">
+      <class name="saucedemo.homePage">
+        <test-method is-config="true" signature="setup()[pri:0, instance:saucedemo.homePage@7674f035]" started-at="2025-08-28T22:11:06 EEST" name="setup" finished-at="2025-08-28T22:11:13 EEST" duration-ms="7244" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="test()[pri:0, instance:saucedemo.homePage@7674f035]" started-at="2025-08-28T22:11:13 EEST" name="test" finished-at="2025-08-28T22:11:13 EEST" duration-ms="8" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test -->
+      </class> <!-- saucedemo.homePage -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
