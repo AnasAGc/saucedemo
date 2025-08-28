@@ -3,12 +3,12 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="saucedemo.homePage">
+      <class name="apiDemo.booksAPI">
         <methods>
-          <include name="DemoTest"/>
           <include name="setup"/>
+          <include name="getBooks_shouldReturnList"/>
         </methods>
-      </class> <!-- saucedemo.homePage -->
+      </class> <!-- apiDemo.booksAPI -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
