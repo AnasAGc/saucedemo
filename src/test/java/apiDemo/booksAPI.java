@@ -60,8 +60,6 @@ public class booksAPI {
         System.out.println("Order ID: " + orderId);
     }
     
-    
-    
     @Test(priority = 3, dependsOnMethods = "createOrder_shouldSucceed")
     public void deleteOrder_shouldSucceed() {
         given()
@@ -71,6 +69,8 @@ public class booksAPI {
                 .then()
                 .statusCode(204);
     }
+    
+
     
     }
 

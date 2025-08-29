@@ -1,21 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
+<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-08-29T15:24:39 EEST" name="Default suite" finished-at="2025-08-29T15:24:44 EEST" duration-ms="4665">
+  <suite started-at="2025-08-29T15:35:12 EEST" name="Default suite" finished-at="2025-08-29T15:35:18 EEST" duration-ms="5871">
     <groups>
     </groups>
-    <test started-at="2025-08-29T15:24:39 EEST" name="Default test" finished-at="2025-08-29T15:24:44 EEST" duration-ms="4665">
+    <test started-at="2025-08-29T15:35:12 EEST" name="Default test" finished-at="2025-08-29T15:35:18 EEST" duration-ms="5871">
       <class name="apiDemo.booksAPI">
-        <test-method is-config="true" signature="setup()[pri:0, instance:apiDemo.booksAPI@28261e8e]" started-at="2025-08-29T15:24:39 EEST" name="setup" finished-at="2025-08-29T15:24:43 EEST" duration-ms="3358" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:apiDemo.booksAPI@4a83a74a]" started-at="2025-08-29T15:35:12 EEST" name="setup" finished-at="2025-08-29T15:35:15 EEST" duration-ms="3469" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="createOrder_shouldSucceed()[pri:2, instance:apiDemo.booksAPI@28261e8e]" started-at="2025-08-29T15:24:43 EEST" name="createOrder_shouldSucceed" finished-at="2025-08-29T15:24:43 EEST" duration-ms="479" status="PASS">
+        <test-method signature="getBooks_shouldReturnList()[pri:1, instance:apiDemo.booksAPI@4a83a74a]" started-at="2025-08-29T15:35:15 EEST" name="getBooks_shouldReturnList" finished-at="2025-08-29T15:35:16 EEST" duration-ms="958" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getBooks_shouldReturnList -->
+        <test-method signature="createOrder_shouldSucceed()[pri:2, instance:apiDemo.booksAPI@4a83a74a]" started-at="2025-08-29T15:35:16 EEST" name="createOrder_shouldSucceed" finished-at="2025-08-29T15:35:17 EEST" duration-ms="804" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- createOrder_shouldSucceed -->
-        <test-method signature="deleteOrder_shouldSucceed()[pri:3, instance:apiDemo.booksAPI@28261e8e]" started-at="2025-08-29T15:24:43 EEST" name="deleteOrder_shouldSucceed" finished-at="2025-08-29T15:24:44 EEST" depends-on-methods="apiDemo.booksAPI.createOrder_shouldSucceed" duration-ms="783" status="PASS">
+        <test-method signature="deleteOrder_shouldSucceed()[pri:3, instance:apiDemo.booksAPI@4a83a74a]" started-at="2025-08-29T15:35:17 EEST" name="deleteOrder_shouldSucceed" finished-at="2025-08-29T15:35:18 EEST" depends-on-methods="apiDemo.booksAPI.createOrder_shouldSucceed" duration-ms="583" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- deleteOrder_shouldSucceed -->
