@@ -1,0 +1,18 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+<suite name="SauceDemo Automation Suite" verbose="1" parallel="tests" thread-count="2">
+
+    <!-- UI Scenarios -->
+    <test name="UI Tests">
+        <classes>
+            <class name="runner.UiRunner"/>
+        </classes>
+    </test>
+
+    <!-- API Scenarios -->
+    <test name="API Tests">
+        <classes>
+            <class name="runner.ApiRunner"/>
+        </classes>
+    </test>
+
+</suite>

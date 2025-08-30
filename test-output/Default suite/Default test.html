@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Default test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>3/0/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>4/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Sun Aug 31 01:30:22 EEST 2025</td>
+<td>Started on:</td><td>Sun Aug 31 01:34:55 EEST 2025</td>
 </tr>
-<tr><td>Total time:</td><td>6 seconds (6049 ms)</td>
+<tr><td>Total time:</td><td>18 seconds (18716 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -67,6 +67,71 @@ function toggleAllBoxes() {
 </tr>
 </table><p/>
 <small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='runner.runner.runScenario()'><b>runScenario</b><br>Test class: runner.runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Complete checkout successfully", "SauceDemo Checkout"</td>
+<td><div><pre>org.openqa.selenium.ElementNotInteractableException: element not interactable
+  (Session info: chrome=139.0.7258.139)
+Build info: version: &apos;4.35.0&apos;, revision: &apos;1c58e5028b&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.5&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [569b0a4470b8d4325ec0132cdc750453, sendKeysToElement {value=[Ljava.lang.CharSequence;@10cb1b89, id=f.434A6FD4653F15CF84FAE21AB78FD40F.d.CEB9A48F6AC461C97261B233A47ECF4B.e.28}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 139.0.7258.139, chrome: {chromedriverVersion: 139.0.7258.154 (9e0d6b2b47f..., userDataDir: C:\Users\AABUGH~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:61592}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:61592/devtoo..., se:cdpVersion: 139.0.7258.139, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (569b0a4470b8d4325ec0132cdc750453)] -&gt; id: first-name]
+Session ID: 569b0a4470b8d4325ec0132cdc750453
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:557)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+	at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:110)
+	at stepDefinitions.CheckoutSteps.fill_checkout_form(CheckoutSteps.java:73)
+	at ✽.I fill the checkout form with first name Anas, last name AbuGhalieh, and zip 1000(file:///C:/Users/aabughalieh/eclipse-workspace/saucedemo/src/test/resources/features/ui/checkout.feature:10)
+</pre></div><a href='#' onClick='toggleBox("stack-trace656494932", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace656494932'><pre>org.openqa.selenium.ElementNotInteractableException: element not interactable
+  (Session info: chrome=139.0.7258.139)
+Build info: version: &apos;4.35.0&apos;, revision: &apos;1c58e5028b&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.5&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [569b0a4470b8d4325ec0132cdc750453, sendKeysToElement {value=[Ljava.lang.CharSequence;@10cb1b89, id=f.434A6FD4653F15CF84FAE21AB78FD40F.d.CEB9A48F6AC461C97261B233A47ECF4B.e.28}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 139.0.7258.139, chrome: {chromedriverVersion: 139.0.7258.154 (9e0d6b2b47f..., userDataDir: C:\Users\AABUGH~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:61592}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:61592/devtoo..., se:cdpVersion: 139.0.7258.139, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (569b0a4470b8d4325ec0132cdc750453)] -&gt; id: first-name]
+Session ID: 569b0a4470b8d4325ec0132cdc750453
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:557)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+	at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:110)
+	at stepDefinitions.CheckoutSteps.fill_checkout_form(CheckoutSteps.java:73)
+	at ✽.I fill the checkout form with first name Anas, last name AbuGhalieh, and zip 1000(file:///C:/Users/aabughalieh/eclipse-workspace/saucedemo/src/test/resources/features/ui/checkout.feature:10)
+</pre></div></td>
+<td>4</td>
+<td>runner.runner@1adb7478</td></tr>
+</table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
 <tr><td><b>Test method</b></td>
@@ -76,20 +141,25 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='runner.ApiRunner.runScenario()'><b>runScenario</b><br>Test class: runner.ApiRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Get list of books", "Books API Tests"</td>
+<td title='runner.UiRunner.runScenario()'><b>runScenario</b><br>Test class: runner.UiRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Complete checkout successfully", "SauceDemo Checkout"</td>
 <td></td>
-<td>2</td>
-<td>runner.ApiRunner@7a5ceedd</td></tr>
-<tr>
-<td title='runner.ApiRunner.runScenario()'><b>runScenario</b><br>Test class: runner.ApiRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Create a new order", "Books API Tests"</td>
-<td></td>
-<td>0</td>
-<td>runner.ApiRunner@7a5ceedd</td></tr>
+<td>3</td>
+<td>runner.UiRunner@3961a41a</td></tr>
 <tr>
 <td title='runner.ApiRunner.runScenario()'><b>runScenario</b><br>Test class: runner.ApiRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Delete the order", "Books API Tests"</td>
 <td></td>
 <td>0</td>
-<td>runner.ApiRunner@7a5ceedd</td></tr>
+<td>runner.ApiRunner@5a4ed68f</td></tr>
+<tr>
+<td title='runner.ApiRunner.runScenario()'><b>runScenario</b><br>Test class: runner.ApiRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Get list of books", "Books API Tests"</td>
+<td></td>
+<td>4</td>
+<td>runner.ApiRunner@5a4ed68f</td></tr>
+<tr>
+<td title='runner.ApiRunner.runScenario()'><b>runScenario</b><br>Test class: runner.ApiRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Create a new order", "Books API Tests"</td>
+<td></td>
+<td>0</td>
+<td>runner.ApiRunner@5a4ed68f</td></tr>
 </table><p>
 </body>
 </html>
