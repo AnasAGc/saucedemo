@@ -1,5 +1,7 @@
+@UI
 Feature: SauceDemo Checkout
 
+  @UI
   Scenario: Complete checkout successfully
     Given I am on the SauceDemo login page
     When  I login with valid credentials username <user> & password <Password>
@@ -11,4 +13,4 @@ Feature: SauceDemo Checkout
 	
 	Examples:
 	| user			|	Password		|	FirstName		|	lastName	|	postalcode	|
-	| standard_user |	secret_sauce	|	Anas			|	AbuGhalieh	| 	1000		| 
+	| standard_user |	secret_sauce	|	Anas			|	AbuGhalieh	| 	1000		|

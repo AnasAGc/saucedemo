@@ -1,5 +1,7 @@
+@Api
 Feature: Books API Tests
-
+	
+  @Api
   Scenario: Get list of books
     When I request the list of books
     Then I should receive a list of books
