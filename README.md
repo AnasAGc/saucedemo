@@ -14,13 +14,6 @@ It covers:
 
 ---
 
-## 📂 Project Structure
-└── test
-├── java
-│ ├── pageObject # Page Objects for UI
-│ ├── resources # Base setup classes
-│ ├── runners # Cucumber Runners
-│ └── stepDefinitions # Cucumber Step Definitions (UI + API)
-└── resources
-├── features # Cucumber Feature files
-└── extent.properties # Extent report configuration
+## 📂 Run All Tests (UI + API) in Parallel
+
+mvn clean test -DsuiteXmlFile=testng.xml
