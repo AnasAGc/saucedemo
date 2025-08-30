@@ -33,12 +33,12 @@ public class CheckoutSteps extends base {
 	}
 	
 	
-	@When ("I login with valid credentials")
-	public void When_I_login_with_valid_credentials() {
+	@When ("^I login with valid credentials username (.+) & password (.+)$")
+	public void When_I_login_with_valid_credentials(String user, String Pass) {
 		
 		wait.until(ExpectedConditions.elementToBeClickable(hp.userField()));
-		hp.userField().sendKeys(Prop.getProperty("User"));
-		hp.PassWordField().sendKeys(Prop.getProperty("Pass"));
+		hp.userField().sendKeys(user);
+		hp.PassWordField().sendKeys(Pass);
 		hp.LoginButton().click();
 	}
 	
@@ -67,12 +67,12 @@ public class CheckoutSteps extends base {
 		
 	}
 	
-	@And("I fill the checkout form with first name, last name, and zip")
-	public void fill_checkout_form(){
+	@And("^I fill the checkout form with first name(.+), last name(.+), and zip(.+)")
+	public void fill_checkout_form(String FirstName, String lastName,String postalcode  ){
 		
-		hp.firstName().sendKeys(Prop.getProperty("FirstName"));
-		hp.lastname().sendKeys(Prop.getProperty("lastName"));
-		hp.postalcode().sendKeys(Prop.getProperty("postalcode"));
+		hp.firstName().sendKeys(FirstName);
+		hp.lastname().sendKeys(lastName);
+		hp.postalcode().sendKeys(postalcode);
 		
 	}
 	
