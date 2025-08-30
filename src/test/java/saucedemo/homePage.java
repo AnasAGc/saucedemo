@@ -34,21 +34,13 @@ public class homePage extends base {
 	
 	
 	
-	public void login() {
+	@Test
+	public void DemoTest()  {
+		
 		wait.until(ExpectedConditions.elementToBeClickable(hp.userField()));
 		hp.userField().sendKeys(Prop.getProperty("User"));
 		hp.PassWordField().sendKeys(Prop.getProperty("Pass"));
 		hp.LoginButton().click();
-	}
-	
-	
-	
-	
-	
-	@Test
-	public void Add_product_proceed_toCheckout()  {
-		
-		
 		
 		wait.until(ExpectedConditions.elementToBeClickable(hp.addToCartButton()));
 		hp.addToCartButton().click();
@@ -72,16 +64,11 @@ public class homePage extends base {
 		
 		wait.until(ExpectedConditions.elementToBeClickable(hp.finishButton()));
 		hp.finishButton().click();
-		
-		
-		
-		
-		
-		
-	}
-	
-	public void massage_validation() {
 		wait.until(ExpectedConditions.visibilityOf(hp.successMessage()));
 		assertEquals(hp.successMessage().getText(),"Thank you for your order!");
+		
+		
+		
 	}
+
 }
