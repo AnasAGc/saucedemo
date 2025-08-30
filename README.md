@@ -17,3 +17,4 @@ It covers:
 ## 📂 Run All Tests (UI + API) in Parallel
 
 mvn clean test -DsuiteXmlFile=testng.xml
+![alt text](https://raw.githubusercontent.com/AnasAGc/saucedemo/refs/heads/main/01.png)
